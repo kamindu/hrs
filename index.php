@@ -2,7 +2,6 @@
 <?php
 session_start();
 if (!$_SESSION["userid"]) {
-    Echo "hi";
 } else {
 
     $u_post = $_SESSION['user_post'];
