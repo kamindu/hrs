@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mainMenu{
+    margin-top: -10px;
+    float: left;
+    width: 85%;
+    margin-left: -30px;
+    position: absolute;
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#300000), to(#620000));
+  background-image: -webkit-linear-gradient(bottom, #300000, #620000);
+  background-image:    -moz-linear-gradient(bottom,#300000 #620000);
+  background-image:      -o-linear-gradient(bottom, #300000, #620000);
+  background-image:         linear-gradient(to bottom, #300000, #620000);
+    border-radius: 5px;
+    color: #f1f1f1;
+    height: 45px; margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 2px #999;	
+    -moz-box-shadow: 0px 0px 2px #999;
+    box-shadow: 0px 0px 2px #999;
+}
+
+
+
+div.moduletable_menu {
+    z-index: 300;
+}
+.item-480 .item-481:hover{
+   background-color:  blue;
+}
+#navigation {
+    margin: 13px 0 13px 0;
+}
+
+#navigation ul,
+.ju_left ul,
+ul.menu {
+    z-index: 1500;
+}
+
+ul.menu {	
+    margin: 0;
+    padding: 0;	
+    line-height: 12px;
+    border: none;
+}
+
+.flatmenu ul.menu {
+    width: auto;
+}
+
+ul.menu li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    line-height: 1em;
+}
+
+.flatmenu ul.menu > li {
+    float: left;
+}
+
+.flatmenu ul.menu li ul li {
+    float: none;
+}
+
+/* main level link */
+ul.menu a, 
+ul.menu .separator {
+    font-size: 20px;
+    color: #805500 !important;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+/* Set border radius and border for the first menu item */
+
+.flatmenu > ul.menu > li  > a:hover
+{
+    color: #777;
+    /*color: #14576B;*/
+    background:rgba(192,192,192,0.2);
+/*background-color: red;*/
+    
+}
+
+/* Set border radius and border for the last menu item */
+ul.menu li:last-child a, 
+ul.menu li:last-child .separator {
+    margin: 0;
+}
+
+ul.menu li:last-child {
+    border-bottom: none !important;
+}
+
+/* level 2 list */
+ul.menu ul {	
+    padding: 0;
+    width: auto;
+    white-space: nowrap;		
+    visibility:hidden;
+    opacity:0;
+
+    -webkit-transition: visibility 0s linear 0.05s, opacity 0.3s linear 0;
+    -moz-transition: visibility 0s linear 0.05s, opacity 0.3s linear 0;
+    -o-transition: visibility 0s linear 0.05s, opacity 0.3s linear 0s;
+    -ms-transition: visibility 0s linear 0.05s, opacity 0.3s linear 0s;
+    transition: visibility 0s linear 0.05s, opacity 0.3s linear 0s;
+}
+
+ul.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    -webkit-transition: height 0.8s linear 0s;
+    -moz-transition: height 0.8s linear 0s;
+    -o-transition: height 0.8s linear 0s;
+    -ms-transition: height 0.8s linear 0s;
+    transition: height 0.8s linear 0s;
+}
+
+.flatmenu ul.menu ul {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    z-index: 567;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+
+    -pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* dropdown */
+.flatmenu ul.menu li:hover > ul {
+    position: absolute;
+    visibility:visible;
+    opacity:1;	
+}
+
+ul.menu li:hover ul li {
+    height: auto;
+    overflow: visible;
+}
+
+
+ul.menu li ul li a, 
+ul.menu li ul li .separator
+{
+    width: auto;
+    display: block;
+    margin: 0;
+
+    -moz-border-radius: 0px 0px 0px 0px !important;
+    -webkit-border-radius: 0px 0px 0px 0px !important;
+    border-radius: 0px 0px 0px 0px !important;
+
+    display: block;
+}
+
+.flatmenu ul.menu li ul li:first-child a, 
+.flatmenu ul.menu li ul li:first-child .separator,
+.flatmenu ul.menu li ul li ul li:first-child a, 
+.flatmenu ul.menu li ul li ul li:first-child .separator
+{
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    border-top: none;
+    display: block;	
+}
+
+.flatmenu ul.menu li ul li:last-child a, 
+.flatmenu ul.menu li ul li:last-child .separator,
+.flatmenu ul.menu li ul li:only-child a, 
+.flatmenu ul.menu li ul li:only-child .separator {
+    -moz-border-radius: 0px 0px 2px 2px !important;
+    -webkit-border-radius: 0px 0px 2px 2px !important;
+    border-radius: 0px 0px 2px 2px !important;
+    border-bottom: none;
+}
+
+.flatmenu ul.menu ul {
+    margin: 0;
+    top: 100%;
+    left: 0%;
+}
+
+.flatmenu ul.menu ul li ul {
+    margin: 0;
+    top: 0%;
+    left: 100%;
+}
+
+ul.menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu ul a, ul.menu ul .separator {
+    font-size: 14px;
+    padding: 5px 20px;
+}
+/* level 3+ list */
+ul.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+/* clearfix */
+ul.menu:after {
+    content: "";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+ul.menu {
+    display: inline-block;
+}
+
+* html ul.menu {
+    height: 1%;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 786px) {
+
+    div.moduletable_menu { 
+        position: absolute;
+        z-index: 0;
+    }
+}
